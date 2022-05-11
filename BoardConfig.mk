@@ -182,6 +182,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
 
+BOARD_EROFS_PCLUSTER_SIZE := 65536
+
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
