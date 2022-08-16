@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
+# Board
+PRODUCT_BOARD_PLATFORM := trinket
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
