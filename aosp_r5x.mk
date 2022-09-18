@@ -28,3 +28,7 @@ PRODUCT_NAME := aosp_r5x
 PRODUCT_MODEL := Realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="r5x" \
+    PRIVATE_BUILD_DESC="unknown-user 10 QKQ1.200209.002 unknown release-keys"

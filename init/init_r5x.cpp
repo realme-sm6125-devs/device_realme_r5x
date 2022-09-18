@@ -50,7 +50,6 @@ using android::base::ReadFileToString;
 
 struct r5x_props
 {
-    std::string build_description;
     std::string build_fingerprint;
     std::string device_build;
     std::string product_device;
@@ -92,11 +91,8 @@ void setRMX(unsigned int variant)
 {
     r5x_props prop[4] = {};
 
-    std::string build_desc = "unknown-user 10 QKQ1.200209.002 unknown release-keys";
-
     //RMX1911
     prop[0] = {
-        build_desc,
         "realme/RMX1911/RMX1911:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1911",
         "RMX1911",
@@ -104,7 +100,6 @@ void setRMX(unsigned int variant)
 
     // RMX1925
     prop[1] = {
-        build_desc,
         "realme/RMX1925/RMX1925:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1925",
         "RMX1925",
@@ -112,7 +107,6 @@ void setRMX(unsigned int variant)
 
     //RMX1927
     prop[2] = {
-        build_desc,
         "realme/RMX1927/RMX1927:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1927",
         "RMX1927",
@@ -120,7 +114,6 @@ void setRMX(unsigned int variant)
 
     //RMX2030
     prop[3] = {
-        build_desc,
         "realme/RMX2030/RMX2030:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX2030",
         "RMX2030",
@@ -138,7 +131,6 @@ void setRMX(unsigned int variant)
         property_override(prop_name.c_str(), value.c_str());
     };
 
-    property_override("ro.build.description", prop[variant].build_description.c_str());
     property_override("ro.build.product", prop[variant].product_device.c_str());
     for (const auto &source : ro_props_default_source_order)
     {
