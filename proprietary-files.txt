@@ -1,30 +1,44 @@
-# ADSP - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
-vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|f34d2b7067b6f2fd8c6b79ad4a9e1b3621ab5a6c
-vendor/lib/libadsp_default_listener.so|0376a56ab5d88e5d118e37f6e6371b30746a97e2
-vendor/lib/libadsprpc.so|1a65103c7891a1fd8019f9dad8d2ec90886fbd8e
-vendor/lib/libmdsprpc.so|1748f39b97ab5800c1269d082acb4f5a5f1d6eb2
-vendor/lib/libsdsprpc.so|a34724cd8864154124d50bdb838a7bee9aa2fa14
-vendor/lib64/libadsp_default_listener.so|0324e797f6fdd15680df7fdacc51f713e40b9806
-vendor/lib64/libadsprpc.so|b68759d2494f3ae742debe8e47711a060f282640
-vendor/lib64/libmdsprpc.so|bee4ab1670bd588dc32a40a3d7d2d32f894634f9
-vendor/lib64/libsdsprpc.so|b0d5ae800c878103f94f162647c559320107d452
+# All blobs from trinket-user 10 QKQ1.200209.002 1830_202211301527 RMX1911EX_11.C.83 release-keys, unless pinned
 
-# ADSP modules - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
-vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
-vendor/lib/rfsa/adsp/libdepthmap_skel.so|b763ef53e1dfd30963f7a0a26dea7753f24e1926
-vendor/lib/rfsa/adsp/libdspCV_skel.so|c6034c389845a94a4054dd0fe9a0381adbf086e5
-vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|50ac955393bfae796e5fcaccad0bd8c90bd5d16a
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|e7b555579924337dc72badc71bdd49c13664454b
-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|4659105d1ca963ddfab1560e21009107b8cc520d
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
-vendor/lib/rfsa/adsp/libthread_blur_skel.so|b7f81ac2361e1a6292f5ab829940253fe418b72c
+# ADSP
+vendor/bin/adsprpcd
+vendor/lib/libadsprpc.so
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libfastcvdsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libfastcvdsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+
+# ADSP-Modules
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Enco.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
+vendor/lib/rfsa/adsp/dirac.so
+vendor/lib/rfsa/adsp/dirac_resource.dar
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
+vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
+vendor/lib/rfsa/adsp/libclock_adjust_skel.so
+vendor/lib/rfsa/adsp/libdepthmap_skel.so
+vendor/lib/rfsa/adsp/libdirac-capiv2.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libthread_blur_skel.so
+vendor/lib/rfsa/adsp/libVC1Dec.so
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
+vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -1952,15 +1966,16 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# CDSP - from LA.UM.9.11.r1-3900-NICOBAR.0
-vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsprpc.so|3f4064f2c26f3bb4eef9175fe5970207f8734130
-vendor/lib/libcdsp_default_listener.so|8bd2281f2c60f768d2e67fccc840d04bbd2e7d51
-vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
-vendor/lib64/libcdsprpc.so|daa90f06b3bdb89779f1dac92bc77ee5455a22b6
-vendor/lib64/libcdsp_default_listener.so|96d722b324c4d1a554d0f018d8cbbb8c4e4519b8
-vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
+# CDSP
+vendor/bin/cdsprpcd
+vendor/lib/libcdsprpc.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libfastrpc_utf_stub.so
+vendor/lib/libsysmon_cdsp_skel.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libfastrpc_utf_stub.so
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # Certificate Authority - from LA.UM.9.11.r1-03900-NICOBAR.0
 -vendor/app/CACertService/CACertService.apk|b08fa7c9d2faba99547db99df908909dfc0c8e90
@@ -2102,20 +2117,21 @@ vendor/lib64/libssd.so|ad3ccaeab10635594f64602a69265a1d02a9be8f
 vendor/lib64/libtrustedapploader.so|25d17a1b9e87562a8b1c6167b48d8ab283736354
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|ac913be657a31fd421da00825ef9900bf82cd6f6
 
-# DRM - Widevine
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/libQSEEComAPI.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libwvhidl.so
+# DRM - Hardware
+vendor/bin/hw/android.hardware.drm@1.0-service
+vendor/bin/hw/android.hardware.drm@1.2-service.clearkey
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.0-service.rc
+vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/hw/android.hardware.drm@1.0-impl.so
 
-# DSP - from RMX2050_11.C.10 qssi-user-RKQ1.200903.002
-vendor/bin/dspservice|00dcd6e79d32426b15ed2148bf3c05082c400c9e
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|b5075bcf4e885b01b25e7ecb3fdcf022977353ba
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+# DRM-Widevine
+vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # FM - from LA.UM.9.11.r1-03900-NICOBAR.0
 system_ext/lib/fm_helium.so|7ef734f43c11d1942eb4f1919e58bf2e7964e084
@@ -2813,7 +2829,8 @@ vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/sns_reg_config
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk
+-product/framework/vendor.qti.hardware.soter-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
@@ -2847,6 +2864,16 @@ vendor/firmware/tp/19631/RA105A004.ini
 vendor/firmware/tp/19631/nt_hlt_fw.bin
 vendor/firmware/tp/19631/nt_hlt_fw_signed.bin
 vendor/firmware/tp/19631/RA105A0.bin
+vendor/firmware/tp/19743/ilitek_fw_inx_signed.bin
+vendor/firmware/tp/19743/ilitek_fw_xlgg3_signed.bin
+vendor/firmware/tp/19743/nt_hltg_fw.bin
+vendor/firmware/tp/19743/nt_hltg_fw_mp.bin
+vendor/firmware/tp/19743/nt_hltg_fw_signed.bin
+vendor/firmware/tp/19743/nt_hlt_fw.bin
+vendor/firmware/tp/19743/nt_hlt_fw_mp.bin
+vendor/firmware/tp/19743/nt_hlt_fw_signed.bin
+vendor/firmware/tp/19743/RA170A1.bin
+vendor/firmware/tp/19743/RA170X1.bin
 
 # TUI (Trusted User Interface) - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
