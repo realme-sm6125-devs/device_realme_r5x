@@ -177,6 +177,7 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libsnsdiaglog.so
 vendor/lib/libseemore.so
 vendor/lib/libSNPE.so
 vendor/lib/libsnpeml.so
@@ -198,6 +199,7 @@ vendor/lib/libVDPostureDetection.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libvideoutils.so
 vendor/lib/imx386_PdafLibrary.so
+vendor/lib64/libsnsdiaglog.so
 
 # Camera actuators
 vendor/lib/libactuator_ad5816g.so
