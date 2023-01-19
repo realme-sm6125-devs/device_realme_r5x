@@ -471,4 +471,7 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Does the device support battery LED? -->
+    <bool name="config_intrusiveBatteryLed">false</bool>
 </resources>
