@@ -280,6 +280,12 @@ PRODUCT_PACKAGES += \
     init.r5x.rc \
     ueventd.qcom.rc
 
+# Kernel (Prebuilt)
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)-kernel/Image.gz-dtb
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
