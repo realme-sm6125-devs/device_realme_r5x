@@ -87,9 +87,6 @@ TARGET_KERNEL_CONFIG := biofrost_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
-
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_AUDIOSPHERE := true
