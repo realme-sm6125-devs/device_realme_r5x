@@ -25,6 +25,8 @@ type modem_efs_partition_device, dev_type;
 
 type sysfs_uio_file, fs_type, sysfs_type;
 
+type sysfs_usb_supply, fs_type, sysfs_type;
+
 type sysfs_vendor_rmt_storage, fs_type, sysfs_type;
 
 type sysfs_hal_health_default, fs_type, sysfs_type;
