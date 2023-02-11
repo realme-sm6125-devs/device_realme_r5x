@@ -42,11 +42,6 @@ persist.data.df.dev_name=rmnet_usb0
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
 
-# Graphics
-ro.sf.lcd_density=320
-persist.hwc.enable_vds=1
-debug.cpurend.vsync=false
-
 # Force triple frame buffers
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
@@ -54,9 +49,6 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 vendor.iop.enable_prefetch_ofr=1
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
-
-# VSync
-debug.cpurend.vsync=false
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
