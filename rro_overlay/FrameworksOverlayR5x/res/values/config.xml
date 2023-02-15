@@ -468,4 +468,7 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">trinket-user 10 QKQ1.200209.002 release-keys</string>
 </resources>
