@@ -50,6 +50,7 @@ using android::base::ReadFileToString;
 
 struct r5x_props
 {
+    std::string build_fingerprint;
     std::string device_build;
     std::string product_device;
 };
@@ -92,24 +93,28 @@ void setRMX(unsigned int variant)
 
     //RMX1911
     prop[0] = {
+        "realme/RMX1911/RMX1911:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1911",
         "RMX1911",
     };
 
     // RMX1925
     prop[1] = {
+        "realme/RMX1925/RMX1925:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1925",
         "RMX1925",
     };
 
     //RMX1927
     prop[2] = {
+        "realme/RMX1927/RMX1927:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX1927",
         "RMX1927",
     };
 
     //RMX2030
     prop[3] = {
+        "realme/RMX2030/RMX2030:10/QKQ1.200209.002/1608537052:user/release-keys",
         "RMX2030",
         "RMX2030",
     };
@@ -129,6 +134,7 @@ void setRMX(unsigned int variant)
     property_override("ro.build.product", prop[variant].product_device.c_str());
     for (const auto &source : ro_props_default_source_order)
     {
+        set_ro_build_prop(source, "fingerprint", prop[variant].build_fingerprint.c_str());
         set_ro_product_prop(source, "device", prop[variant].product_device.c_str());
         set_ro_product_prop(source, "model", prop[variant].device_build.c_str());
     }
