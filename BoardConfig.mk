@@ -71,8 +71,6 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
-BOARD_BOOTIMG_HEADER_VERSION := 1
-BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boot_devices=soc/4744000.sdhci
@@ -83,12 +81,14 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_SOURCE := kernel/realme/r5x
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := biofrost_defconfig
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-   HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
+# Kernel ( Prebuilt )
+BOARD_BOOT_HEADER_VERSION := 1
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_ARCH := arm64
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -201,7 +201,6 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Recovery
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
