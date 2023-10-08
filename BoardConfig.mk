@@ -147,6 +147,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc_ese
 ODM_MANIFEST_NFC_ESE_FILES := $(DEVICE_PATH)/configs/manifests/manifest_nfc_ese.xml
 
+# Hacks
+BUILD_BROKEN_CLANG_PROPERTY := true
+
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
