@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+#OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libdng_sdk.vendor \
     GCamGOPrebuilt
 
