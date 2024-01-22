@@ -257,6 +257,7 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom_ramdisk \
     init.class_main.sh \
     init.oppo.face.rc \
     init.oppo.face.sh \
